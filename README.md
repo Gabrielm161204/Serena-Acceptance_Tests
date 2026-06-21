@@ -1,4 +1,4 @@
-# Acceptance Tests - Proyecto Serena
+v# Acceptance Tests - Proyecto Serena
 
 Este repositorio contiene archivos `.feature` en lenguaje Gherkin para las pruebas de aceptación del proyecto Serena.
 
