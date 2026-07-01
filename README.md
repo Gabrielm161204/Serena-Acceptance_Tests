@@ -10,8 +10,8 @@ Cubre la totalidad de las épicas e historias de usuario definidas en el proyect
 
 | Archivo | Épica | User Stories cubiertas |
 |---|---|---|
-| `01-registro-estado-emocional.feature` | EP01 Registro de Estado Emocional | US01, US02, US03, US04 |
-| `02-seguimiento-y-reportes.feature` | EP02 Seguimiento y Reportes | US09, US10, US12, US13 |
+| `01-registro-estado-emocional.feature` | EP01 Registro de Estado Emocional | US01, US02, US03, US04, US05, US06, US07, US08 |
+| `02-seguimiento-y-reportes.feature` | EP02 Seguimiento y Reportes | US09, US10, US11, US12, US13, US14, US15 |
 | `05-alertas-y-riesgo.feature` | EP03 Alertas y Riesgo | US16, US17, US18, US19, US20, US21 |
 | `06-regulacion-emocional.feature` | EP04 Regulación Emocional | US22, US23, US24, US25, US26, US27 |
 | `07-comunicacion-paciente-especialista.feature` | EP05 Comunicación Paciente–Especialista | US28, US29, US30, US31 |
