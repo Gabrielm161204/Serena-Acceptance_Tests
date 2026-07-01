@@ -1,5 +1,5 @@
-Feature: EP01 Registro de Estado Emocional .
-  Relacionado con las historias US01, US02, US03 y US04.
+Feature: EP01 Registro de Estado Emocional
+  Relacionado con las historias US01, US02, US03, US04, US05, US06, US07 y US08.
 
   Scenario: US01 Registro y almacenamiento del estado emocional
     Given el paciente inició sesión
@@ -35,3 +35,26 @@ Feature: EP01 Registro de Estado Emocional .
     Given el paciente está en el formulario de registro diario
     When ingresa horas dormidas y selecciona calidad "buena", "regular" o "mala" y guarda
     Then el sistema almacena los datos de sueño con fecha
+
+  Scenario: US05 El paciente crea una nota de texto
+    Given el paciente está en el registro diario
+    When escribe una nota de texto y pulsa "Guardar"
+    Then la nota queda asociada al registro de ese día
+    And es visible en su historial
+
+  Scenario: US06 Registro de nota de voz
+    Given el paciente toca el ícono de micrófono en el registro diario
+    When graba un audio y confirma "Guardar nota de voz"
+    Then el archivo se almacena asociado a la fecha
+    And puede reproducirse desde el historial
+
+  Scenario: US07 Registro de síntomas físicos asociados a la emoción
+    Given el paciente está en el formulario de registro diario
+    And selecciona "Síntomas físicos"
+    When escribe los síntomas que está sintiendo (p. ej. latidos acelerados, sudoración) y toca "Guardar"
+    Then el sistema almacena esos datos junto al registro emocional del día
+
+  Scenario: US08 Registro del contexto de la emoción
+    Given el paciente está registrando su emoción
+    When selecciona uno o más ámbitos en "Contexto" (trabajo, estudios, familia, pareja) y guarda
+    Then el sistema almacena el contexto junto al registro emocional del día
